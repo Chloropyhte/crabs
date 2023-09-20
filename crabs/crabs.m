@@ -1,5 +1,6 @@
 
 function crabs ()
+% made by Owen
 % Crabs is a kids computer game where a fisherman, called the captain,
 % hunts for a very clever and powerful crab.
 % Draw the game map and initialize map dimensions.
