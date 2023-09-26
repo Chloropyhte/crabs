@@ -21,8 +21,9 @@ drawLine: vector, vector, color -> graphics handle <b>
 Purpose: draws a line from the vectors created by getCapt.
 Dependencies: draws a line on a graph
 Call: captainGraphics(n) = drawLine(pt'n', pt'm', "k");
-Side Effects: 
+Side Effects: connects the Captain's points on a separate plot.
 
+</b>
 drawCapt: number number number number -> graphics handle
 Purpose: expects 4 numbers, x pos of capt, y pos of capt, an angle of reflection for the captain, and the distance between each of the captain's points, and returns the captain's points on drawMap()
 Dependencies: getCapt(), getTranslation()
