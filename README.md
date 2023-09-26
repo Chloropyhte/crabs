@@ -1,29 +1,27 @@
 # crabs
 
 
-getTranslation: number1 number2 -> matrix </b>
+getTranslation: number1 number2 -> matrix
 Purpose: Number1 represents the amount of shift in the x direction and number2 the amount to shift in the y direction. <b>
          getTranslate uses these numbers to create a 3x3 matrix that will translate an object stored as a 3XN matrix <b>
-         when it multiplies the object matrix. </b>
-Dependencies: None. </b>
-Call: T = getTranslation(xCapt, yCapt) </b>
-Side Effects: None. </b>
+         when it multiplies the object matrix.
+Dependencies: None.
+Call: T = getTranslation(xCapt, yCapt)
+Side Effects: None.
 
-<b>
-getCapt: number -> matrix <b>
-Purpose: The number is the captSize, which displays the distance between each point of the Captain. getCapt uses these <b> 
-         numbers to create a 3x18 matrix to store the initial position of the Captain's x, y, and z positions <b>
-Dependencies: None </b>
+getCapt: number -> matrix
+Purpose: The number is the captSize, which displays the distance between each point of the Captain. getCapt uses these
+         numbers to create a 3x18 matrix to store the initial position of the Captain's x, y, and z positions
+Dependencies: None
 Call: capt = getCapt(sizeCapt)
-Side Effects: None. </b>
+Side Effects: None.
 
-drawLine: vector, vector, color -> graphics handle <b>
+drawLine: vector, vector, color -> graphics handle
 Purpose: draws a line from the vectors created by getCapt.
 Dependencies: draws a line on a graph
 Call: captainGraphics(n) = drawLine(pt'n', pt'm', "k");
 Side Effects: connects the Captain's points on a separate plot.
 
-</b>
 drawCapt: number number number number -> graphics handle
 Purpose: expects 4 numbers, x pos of capt, y pos of capt, an angle of reflection for the captain, and the distance between each of the captain's points, and returns the captain's points on drawMap()
 Dependencies: getCapt(), getTranslation()
