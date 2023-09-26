@@ -1,15 +1,13 @@
 # crabs
 getTranslation: number1 number2 -> matrix
-Purpose: Number1 represents the amount of shift in the x direction and number2 the amount to shift in the y direction. <b>
-         getTranslate uses these numbers to create a 3x3 matrix that will translate an object stored as a 3XN matrix <b>
+Purpose: Number1 represents the amount of shift in the x direction and number2 the amount to shift in the y direction. getTranslate uses these numbers to create a 3x3 matrix that will translate an object stored as a 3XN matrix.
          when it multiplies the object matrix.
 Dependencies: None.
 Call: T = getTranslation(xCapt, yCapt)
 Side Effects: None.
 
 getCapt: number -> matrix
-Purpose: The number is the captSize, which displays the distance between each point of the Captain. getCapt uses these
-         numbers to create a 3x18 matrix to store the initial position of the Captain's x, y, and z positions
+Purpose: The number is the captSize, which displays the distance between each point of the Captain. getCapt uses these numbers to create a 3x18 matrix to store the initial position of the Captain's x, y, and z positions.
 Dependencies: None
 Call: capt = getCapt(sizeCapt)
 Side Effects: None.
