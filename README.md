@@ -1,6 +1,4 @@
 # crabs
-
-
 getTranslation: number1 number2 -> matrix
 Purpose: Number1 represents the amount of shift in the x direction and number2 the amount to shift in the y direction. <b>
          getTranslate uses these numbers to create a 3x3 matrix that will translate an object stored as a 3XN matrix <b>
