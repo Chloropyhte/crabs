@@ -28,11 +28,13 @@ Side Effects: Plots the Captain's points on a separate plot.
 
 drawMap: string -> image
 purpose: expects an image name and returns the backround image correlated to that name.
+Dependencies:
 Call: drawMap(imageName)
 Side effects: None
 
 crabs: call -> image
 purpose: expects a call of itself and returns an image of the entire game including DrawMap and DrawCapt
+Dependencies:
 Call: crabs
 Side Effects: None
 
