@@ -14,7 +14,7 @@ Side Effects: None.
 
 drawLine: vector, vector, color -> graphics handle
 Purpose: draws a line from the vectors created by getCapt.
-Dependencies: draws a line on a graph
+Dependencies: None
 Call: captainGraphics(n) = drawLine(pt'n', pt'm', "k");
 Side Effects: connects the Captain's points on a separate plot.
 
@@ -26,13 +26,13 @@ Side Effects: Plots the Captain's points on a separate plot.
 
 drawMap: string -> image
 purpose: expects an image name and returns the backround image correlated to that name.
-Dependencies:
+Dependencies: None
 Call: drawMap(imageName)
 Side effects: None
 
 crabs: call -> image
 purpose: expects a call of itself and returns an image of the entire game including DrawMap and DrawCapt
-Dependencies:
+Dependencies: drawMap(), drawCapt()
 Call: crabs
 Side Effects: None
 
