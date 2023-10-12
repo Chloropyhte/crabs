@@ -1,5 +1,5 @@
-function inBounds = isOnMap (x, y, width, height, buffer)
-  if (x > buffer && x < width-buffer && y > buffer && y < height-buffer)
+function inBounds = isOnMap (x, y, width, height, size)
+  if (x > size && x < width-size && y > size && y < height-size)
     inBounds = true;
   else
     inBounds = false;
