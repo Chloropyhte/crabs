@@ -1,4 +1,4 @@
-function capt = getCapt (captSize)
+function capt = getCapt (captSize);
 
 %{
 Right Hand Spear Tip
@@ -45,8 +45,17 @@ captPt13=[ 3*captSize; -2*captSize; 1]; % spear point
 captPt14=[ -captSize; -2*captSize; 1]; % spear end
 
 %spear left side
-captPt15=[ 3*captSize; 2*captSize; 1]; % spear point
+captPt15=[ 5*captSize; 2*captSize; 1]; % spear point
 captPt16=[ -captSize; 2*captSize; 1]; % spear end
+
+%net on left side
+captPt19 = [5*captSize; 3.5*captSize; 1];
+captPt20 = [8*captSize; 3.5*captSize; 1];
+captPt21 = [8*captSize; 0.5*captSize; 1];
+captPt22 = [5*captSize; 0.5*captSize; 1];
+
+invisCaptNode = [0; 0; 1];
+invisNetNode = [6.5*captSize; 2*captSize; 1];
 
 %right elbow
 captPt17=[0.5*captSize; -captSize; 1];
@@ -65,5 +74,7 @@ captPt19=[2*captSize; -3captSize; 1];
 %}
 %captain matrix
 capt = [ captPt1, captPt2, captPt3, captPt4, captPt5, captPt6, captPt7, ...
-captPt8, captPt9, captPt10, captPt11, captPt12, captPt13, captPt14, captPt15, captPt16, captPt17, captPt18];
+captPt8, captPt9, captPt10, captPt11, captPt12, captPt13, captPt14, captPt15,...
+captPt16, captPt17, captPt18, captPt19, captPt20, captPt21, captPt22,...
+invisCaptNode, invisNetNode];
 endfunction

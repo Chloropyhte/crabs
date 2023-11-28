@@ -1,6 +1,6 @@
-function T = getTranslation (ChangeX, ChangeY)
+function T = getTranslation (ChangeX, ChangeY);
 
-T = [1, 0, ChangeX;0, 1 , ChangeY;0, 0, 1]
+T = [1, 0, ChangeX;0, 1 , ChangeY;0, 0, 1];
 
 endfunction
 
